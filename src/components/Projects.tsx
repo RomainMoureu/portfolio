@@ -1,6 +1,5 @@
 import github from "../assets/github.svg";
 import lockio from "../assets/projects/projet.png";
-import dodleme from "../assets/projects/projet.png";
 import miageland from "../assets/projects/projet.png";
 import SectionHeader from "./SectionHeader.tsx";
 
@@ -25,6 +24,7 @@ const projects = [
     description:
       "Lockio is our Master project. This PoC was designed to demonstrate our idea about an innovative solution to store your stuff.",
   },
+  /*
   {
     name: "DodleMe",
     img: dodleme,
@@ -41,7 +41,7 @@ const projects = [
     tags: ["Web", "Front", "Back", "MongoDB"],
     description:
       "3rd year university Web project. We had to create a web app that allows you to create and share events planning.",
-  },
+  },*/
 ];
 
 const subtitle =
