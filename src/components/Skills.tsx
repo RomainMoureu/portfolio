@@ -1,59 +1,57 @@
-import data_analysis from "../assets/data_analysis.svg";
-import database from "../assets/database.svg";
-import uxui from "../assets/uxui.svg";
-import frontend from "../assets/frontend.svg";
-import backend from "../assets/server.svg";
-import git from "../assets/git.svg";
-import SectionHeader from "./SectionHeader.tsx";
+import data_analysis from "../assets/img/skills/data_analysis.svg";
+import database from "../assets/img/skills/database.svg";
+import uxui from "../assets/img/skills/uxui.svg";
+import frontend from "../assets/img/skills/frontend.svg";
+import backend from "../assets/img/skills/server.svg";
+import git from "../assets/img/skills/git.svg";
 
 const skills = [
   {
     name: "Front-end",
     logo: frontend,
     description:
-      "Building websites is something I enjoy. Currently learning React, I've knowledge in other frameworks like Vue.js and Angular.",
+      "Construire des sites web est quelque chose que j'aime. Actuellement en train d'apprendre React, j'ai des connaissances dans d'autres frameworks comme Vue.js et Angular.",
   },
   {
     name: "Back-end",
     logo: backend,
     description:
-      "Spring Boot, Node.js, ... I've been trained to build back-end applications within my CS studies and my apprenticeship missions.",
+      "Spring Boot, Node.js, ... J'ai été formé à la construction d'applications back-end dans le cadre de mes études en informatique.",
   },
   {
-    name: "Database",
+    name: "Base de données",
     logo: database,
     description:
-      "Databases have always been part of my education. I've knowledge in SQL and NoSQL databases with MySQL, Oracle, Postgres, Neo4J, etc.",
+      "Les bases de données ont toujours fait partie de ma formation. Je possède une expertise en SQL et en NoSQL, notamment avec des technologies telles que MySQL, Oracle, Postgres, etc.",
   },
   {
     name: "UX / UI",
     logo: uxui,
     description:
-      "Figma, Mockups, Designs, ... I've been training my UX / UI skills since the beginning of my CS studies.",
+      "Figma, Mockups, Designs, ... Je m'entraîne à l'UX / UI depuis le début de mes études.",
   },
   {
     name: "Data analysis",
     logo: data_analysis,
     description:
-      "Data analysis has always interested me. I've been doing it for missions + projects and still learning new things about it.",
+      "L'analyse des données m'a toujours intéressé. Je l'ai pratiquée dans le cadre de missions et de projets et j'apprends toujours de nouvelles choses à ce sujet.",
   },
   {
     name: "Git",
     logo: git,
     description:
-      "This is a must-to-know tool for developer and I'm trying to master it as much as possible.",
+      "C'est un outil indispensable pour les développeurs et je l'utilise pour tous mes projets.",
   },
 ];
 
 const subtitle =
-  "some of the skills gained during my time at university, apprenticeships or on my own.";
+  "Certaines compétences acquises au cours de mes études, de mes expériences professionnelles mais également avec des projets personnels. ";
 
 function Skills() {
   return (
-    <div className="m-auto w-4/5 md:w-3/4 lg:w-3/4" id="skills">
+    <section className="m-auto w-4/5 md:w-3/4 lg:w-3/4" id="skills">
       <div className="flex flex-col items-center justify-center">
-        <SectionHeader title="skills" subtitle={subtitle} />
-
+        <p>{subtitle}</p>
         <div className="grid gap-8 gap-y-20 mt-20 mb-8 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill, index) => (
             <div
@@ -68,12 +66,14 @@ function Skills() {
               <div className="text-3xl font-bold text-center -mt-10">
                 {skill.name}
               </div>
-              <div className="text-center w-full">{skill.description}</div>
+              <div className="text-center w-full">
+                {skill.description}
+                </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>        
   );
 }
 
