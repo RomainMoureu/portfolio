@@ -1,6 +1,8 @@
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
 import mail from "../assets/mail.svg";
+import TypeWriter from "typewriter-effect";
+
 function Hero() {
   return (
     <div className="flex flex-col gap-6 items-center justify-center font-medium">
@@ -8,7 +10,28 @@ function Hero() {
         🧑‍💻<span className="text-6xl">👋</span>
       </h1>
       <h2 className="text-4xl font-bold flex gap-2">
-        hi, i'm Romain
+        hi, i'm
+        <span className="text-red-500">
+          <TypeWriter
+            options={{
+              autoStart: true,
+              loop: true,
+            }}
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Romain :)")
+                .start()
+                .pauseFor(2000)
+                .deleteAll("natural")
+                .typeString("coding")
+                .pauseFor(2000)
+                .deleteAll("natural")
+                .typeString("learning")
+                .pauseFor(2000)
+                .deleteAll("natural");
+            }}
+          />
+        </span>
       </h2>
       <p className="text-xl text-cyan-200 text-center">
         Computer Science student in apprenticeship
