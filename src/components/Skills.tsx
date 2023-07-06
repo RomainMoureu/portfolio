@@ -49,7 +49,7 @@ const subtitle =
 
 function Skills() {
   return (
-    <section id="skills" className="m-auto w-4/5 md:w-3/4 lg:w-3/4 mt-20">
+    <section id="skills" className="m-auto w-4/5 md:w-3/4 lg:w-3/4 mt-20 mb-20">
       <div className="flex flex-col items-center justify-center">
         <p className="mb-10">{subtitle}</p>
         <div className="grid gap-8 gap-y-20 mt-20 mb-8 sm:grid-cols-2 lg:grid-cols-3">
