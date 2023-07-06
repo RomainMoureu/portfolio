@@ -49,9 +49,9 @@ const subtitle =
 
 function Skills() {
   return (
-    <section className="m-auto w-4/5 md:w-3/4 lg:w-3/4" id="skills">
+    <section id="skills" className="m-auto w-4/5 md:w-3/4 lg:w-3/4 mt-20">
       <div className="flex flex-col items-center justify-center">
-        <p>{subtitle}</p>
+        <p className="mb-10">{subtitle}</p>
         <div className="grid gap-8 gap-y-20 mt-20 mb-8 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill, index) => (
             <div
@@ -68,7 +68,7 @@ function Skills() {
               </div>
               <div className="text-center w-full">
                 {skill.description}
-                </div>
+              </div>
             </div>
           ))}
         </div>
